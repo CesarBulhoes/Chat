@@ -1,0 +1,30 @@
+{
+  "name": "myhomestudio",
+  "version": "1.0.0",
+  "description": "Chat made out of pure Javascript, HTML5, CSS and server side NodeJS. No framework used.",
+  "main": "server.js",
+  "scripts": {
+    "start": "forever server.js",
+    "stop": "kill -9 $(lsof -t -i:443)",
+    "test": "forever -c 'nodemon --ignore './public/' --exitcrash' server.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public/*"
+    ]
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "CesarBulhoes",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "forever": "^3.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "socket.io": "^2.3.0"
+  }
+}

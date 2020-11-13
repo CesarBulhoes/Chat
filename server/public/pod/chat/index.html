@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Socket.IO chat</title>
+
+  <link rel="stylesheet" href="/pod/chat/chat.css">
+  <link rel="stylesheet" href="/pod/ShadowBox/ShadowBox.css">
+  <link rel="icon" type="image/png" sizes="96x96" href="/pod/assets/img/favicon-96x96.png">
+
+</head>
+
+<body>
+  <div class="chat minimized">
+    <header class="header">
+      <span class="chat-icon"></span>
+      <span class="minimize material-icons" tabindex=0>minimize</span>
+    </header>
+    <ul class="msg_card_body"></ul>
+    <options class="options hide">
+      <span class="exclude">Excluir</span>
+    </options>
+    <div class="info"></div>
+    <form name="message" action="">
+      <input type="text" id="messenger" class="form-control " autocomplete="off"
+        placeholder="Digite aqui..."><button>&#9658</button>
+    </form>
+  </div>
+
+  <div id="modal" class="modal">
+    <form name="register" id="register" method="POST" class="hide">
+      <div class="modal-content">
+        <label>Nome: </label><input type="text" id="name" name="name" placeholder="Nome" required autofocus>
+
+        <button id="enter" type="submit" style="width: 90px;">Entrar</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="/pod/chat/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/pod/ShadowBox/ShadowBox.js"></script>
+<script src="/pod/chat/chat.js"></script>
