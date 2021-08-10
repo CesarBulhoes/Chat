@@ -10,7 +10,7 @@ Just clone, set SLL configuration and in server folder run "npm install".
 
 In server folder run "npm start" (server is configured to run on port 443).
 
-# Stoping
+# Stopping
 
 In server folder run "npm stop" (only works if server is configured on port 443)
 
